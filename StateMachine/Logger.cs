@@ -22,7 +22,7 @@ namespace StateMachine
             log.AppendLine("TimeStamp - " + timestamp.ToString());
             log.AppendLine("\n-------------------------------\n");
 
-            using (FileStream file = File.Open(@"C:\Users\elitsa\source\repos\StateMachine\StateMachine\bin\Debug\log.txt", FileMode.Append))
+            using (FileStream file = File.Open(@"StateMachine\StateMachine\bin\Debug\log.txt", FileMode.Append))
             {
                 using (StreamWriter fileWriter = new StreamWriter(file))
                     fileWriter.WriteLine(log.ToString());
